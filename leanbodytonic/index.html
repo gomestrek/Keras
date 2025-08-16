@@ -37,11 +37,17 @@
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div id="landing-page-container" class="relative w-full min-h-screen cursor-pointer flex flex-col items-center justify-center">
+        
         <picture>
             <source media="(max-width: 768px)" srcset="/leanbodytonic/mobile.webp" type="image/webp">
             <source media="(min-width: 769px)" srcset="/leanbodytonic/web.webp" type="image/webp">
-            <img src="/leanbodytonic/web.webp" alt="Fundo da Landing Page" class="page-background-image">
+            
+            <source media="(max-width: 768px)" srcset="/leanbodytonic/mobile.jpg" type="image/jpeg">
+            <source media="(min-width: 769px)" srcset="/leanbodytonic/web.jpg" type="image/jpeg">
+            
+            <img src="/leanbodytonic/mobile.jpg" alt="Fundo da Landing Page" class="page-background-image">
         </picture>
+        
         <div id="popup-overlay" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
             <div id="cookie-popup" class="relative bg-white rounded-2xl shadow-2xl max-w-lg w-full p-8 md:p-12 text-center transform transition-transform duration-300 scale-100">
                     <button id="close-popup" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors duration-200">
